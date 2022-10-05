@@ -1,0 +1,17 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web
+@using EPiServer.Web.Mvc.Html
+@using EpiSandbox.Web.Helpers
+@model EpiSandbox.Web.Models.Pages.StartPage
+@helper MenuItemTemplate(HtmlHelpers.MenuItem item) 
+{ 
+    <li>
+        @Html.PageLink(item.Page)
+    </li>
+}
+
+<nav>
+    <ul>
+        @Html.MenuList(SiteDefinition.Current.StartPage, MenuItemTemplate)
+    </ul>
+</nav>

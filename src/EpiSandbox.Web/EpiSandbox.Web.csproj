@@ -216,21 +216,25 @@
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
+    <Compile Include="Business\ContentExtensions.cs" />
     <Compile Include="Controllers\Pages\AboutPageController.cs" />
     <Compile Include="Controllers\Pages\HomepageController.cs" />
     <Compile Include="Controllers\Pages\MenuPageController.cs" />
+    <Compile Include="Controllers\Pages\StartPageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\HtmlHelpers.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Pages\AbstractContentPage.cs" />
     <Compile Include="Models\Pages\AboutPage.cs" />
     <Compile Include="Models\Pages\Homepage.cs" />
     <Compile Include="Models\Pages\MenuPage.cs" />
+    <Compile Include="Models\Pages\StartPage.cs" />
+    <Compile Include="Models\ViewModels\PageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Business\" />
     <Folder Include="Models\Blocks\" />
     <Folder Include="Models\Properties\" />
     <Folder Include="Static\" />
@@ -245,6 +249,12 @@
     <Content Include="Content\assets\img\events-3.jpg" />
     <Content Include="Content\assets\img\favicon.png" />
     <Content Include="Content\assets\img\hero-img.png" />
+    <Content Include="Content\assets\img\menu\menu-item-1.png" />
+    <Content Include="Content\assets\img\menu\menu-item-2.png" />
+    <Content Include="Content\assets\img\menu\menu-item-3.png" />
+    <Content Include="Content\assets\img\menu\menu-item-4.png" />
+    <Content Include="Content\assets\img\menu\menu-item-5.png" />
+    <Content Include="Content\assets\img\menu\menu-item-6.png" />
     <Content Include="Content\assets\img\reservation.jpg" />
     <Content Include="Content\assets\img\stats-bg.jpg" />
     <Content Include="Content\assets\img\team-shape.svg" />
@@ -333,6 +343,7 @@
     <Content Include="modules\_protected\EPiServer.Cms.TinyMce\EPiServer.Cms.TinyMce.zip" />
     <Content Include="License.config" />
     <None Include="packages.config" />
+    <Content Include="Views\StartPage\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
