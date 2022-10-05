@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpiSandbox.Web", "src\EpiSandbox.Web\EpiSandbox.Web.csproj", "{F5CBA148-1587-4A9A-BC4D-7A1AC192CE92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5CBA148-1587-4A9A-BC4D-7A1AC192CE92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5CBA148-1587-4A9A-BC4D-7A1AC192CE92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5CBA148-1587-4A9A-BC4D-7A1AC192CE92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5CBA148-1587-4A9A-BC4D-7A1AC192CE92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8A4C6D9-F7CF-476A-8D6D-FA0116DB7702}
+	EndGlobalSection
+EndGlobal
