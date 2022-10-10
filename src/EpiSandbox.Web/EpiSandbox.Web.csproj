@@ -217,7 +217,12 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
     <Compile Include="Business\ContentExtensions.cs" />
+    <Compile Include="Controllers\Blocks\HeaderBlockController.cs" />
     <Compile Include="Controllers\Pages\AboutPageController.cs" />
+    <Compile Include="Controllers\Pages\ChefPageController.cs" />
+    <Compile Include="Controllers\Pages\ContactPageController.cs" />
+    <Compile Include="Controllers\Pages\EventPageController.cs" />
+    <Compile Include="Controllers\Pages\GalleryPageController.cs" />
     <Compile Include="Controllers\Pages\HomepageController.cs" />
     <Compile Include="Controllers\Pages\MenuPageController.cs" />
     <Compile Include="Controllers\Pages\StartPageController.cs" />
@@ -225,9 +230,15 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\HtmlHelpers.cs" />
+    <Compile Include="Models\Blocks\HeaderBlock.cs" />
+    <Compile Include="Models\Blocks\SiteBlockData.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Pages\AbstractContentPage.cs" />
     <Compile Include="Models\Pages\AboutPage.cs" />
+    <Compile Include="Models\Pages\ChefPage.cs" />
+    <Compile Include="Models\Pages\ContactPage.cs" />
+    <Compile Include="Models\Pages\EventPage.cs" />
+    <Compile Include="Models\Pages\GalleryPage.cs" />
     <Compile Include="Models\Pages\Homepage.cs" />
     <Compile Include="Models\Pages\MenuPage.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
@@ -248,6 +259,14 @@
     <Content Include="Content\assets\img\events-2.jpg" />
     <Content Include="Content\assets\img\events-3.jpg" />
     <Content Include="Content\assets\img\favicon.png" />
+    <Content Include="Content\assets\img\gallery\gallery-1.jpg" />
+    <Content Include="Content\assets\img\gallery\gallery-2.jpg" />
+    <Content Include="Content\assets\img\gallery\gallery-3.jpg" />
+    <Content Include="Content\assets\img\gallery\gallery-4.jpg" />
+    <Content Include="Content\assets\img\gallery\gallery-5.jpg" />
+    <Content Include="Content\assets\img\gallery\gallery-6.jpg" />
+    <Content Include="Content\assets\img\gallery\gallery-7.jpg" />
+    <Content Include="Content\assets\img\gallery\gallery-8.jpg" />
     <Content Include="Content\assets\img\hero-img.png" />
     <Content Include="Content\assets\img\menu\menu-item-1.png" />
     <Content Include="Content\assets\img\menu\menu-item-2.png" />
@@ -325,6 +344,11 @@
     <Content Include="Content\assets\vendor\swiper\swiper-bundle.min.css" />
     <Content Include="Content\assets\vendor\swiper\swiper-bundle.min.js" />
     <Content Include="Views\AboutPage\Index.cshtml" />
+    <Content Include="Views\ChefPage\Index.cshtml" />
+    <Content Include="Views\ContactPage\Index.cshtml" />
+    <Content Include="Views\EventPage\Index.cshtml" />
+    <Content Include="Views\GalleryPage\Index.cshtml" />
+    <Content Include="Views\HeaderBlock\HeaderBlock.cshtml" />
     <Content Include="Views\Homepage\Index.cshtml" />
     <Content Include="Views\MenuPage\Index.cshtml" />
     <Content Include="Views\Shared\Layouts\_Root.cshtml" />
