@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using EpiSandbox.Web.Models.Blocks;
+using EPiServer.Core;
 using EPiServer.DataAnnotations;
 
 namespace EpiSandbox.Web.Models.Pages
@@ -14,5 +15,10 @@ namespace EpiSandbox.Web.Models.Pages
             Name = "Header Block Area", 
             Order = 10)]
         public virtual HeaderBlock HeaderBlock { get; set; }
+        [Display(
+            Name = "Chefs",
+            Order = 20)]
+        [AllowedTypes(new []{ typeof(ChefBlock)} )]
+        public virtual ContentArea Chefs { get; set; }
     }
 }

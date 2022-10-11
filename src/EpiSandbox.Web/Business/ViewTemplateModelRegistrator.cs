@@ -19,6 +19,16 @@ namespace EpiSandbox.Web.Business
                     TemplateTypeCategory = TemplateTypeCategories.MvcPartialView,
                     AvailableWithoutTag = true
                 });
+            
+            viewTemplateModelRegistrator.Add(typeof(ChefBlock),
+                new EPiServer.DataAbstraction.TemplateModel()
+                {
+                    Name = "HeaderBlockTop",
+                    Description = "Display a header on top of the page.",
+                    Path = "~/Views/Shared/ChefBlock.cshtml",
+                    TemplateTypeCategory = TemplateTypeCategories.MvcPartialView,
+                    AvailableWithoutTag = true
+                });
         }
     }
 }
