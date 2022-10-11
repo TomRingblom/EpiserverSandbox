@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using EpiSandbox.Web.Models.Blocks;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
@@ -11,13 +12,9 @@ namespace EpiSandbox.Web.Models.Pages
         GroupName = "General Content")]
     public class AboutPage : AbstractContentPage
     {
-        [Display(Name = "HeadLine", GroupName = SystemTabNames.Content, Order = 10)]
-        public virtual string HeadLine { get; set; }
-        
-        [Display(Name = "HeadLine Slug", GroupName = SystemTabNames.Content, Order = 20)]
-        public virtual string HeadLineSlug { get; set; }
-        
-        [Display(Name = "Body", GroupName = SystemTabNames.Content, Order = 30)]
-        public virtual XhtmlString Body { get; set; }
+        [Display(
+            Name = "Header Block Area", 
+            Order = 10)]
+        public virtual HeaderBlock HeaderBlock { get; set; }
     }
 }

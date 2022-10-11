@@ -1,0 +1,6 @@
+﻿@model EpiSandbox.Web.Models.Blocks.HeaderBlock
+
+<div class="section-header mt-4">
+  <h2>@Html.PropertyFor(x => x.Title)</h2>
+  <p>@Html.PropertyFor(x => x.TextBlackFirst) <span>@Html.PropertyFor(x => x.TextRed)</span> @Html.PropertyFor(x => x.TextBlackSecond)</p>
+</div>

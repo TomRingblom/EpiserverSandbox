@@ -217,7 +217,7 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
     <Compile Include="Business\ContentExtensions.cs" />
-    <Compile Include="Controllers\Blocks\HeaderBlockController.cs" />
+    <Compile Include="Business\ViewTemplateModelRegistrator.cs" />
     <Compile Include="Controllers\Pages\AboutPageController.cs" />
     <Compile Include="Controllers\Pages\ChefPageController.cs" />
     <Compile Include="Controllers\Pages\ContactPageController.cs" />
@@ -249,12 +249,16 @@
     <Folder Include="Models\Blocks\" />
     <Folder Include="Models\Properties\" />
     <Folder Include="Static\" />
+    <Folder Include="Views\HeaderBlock" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\assets\css\main.css" />
     <Content Include="Content\assets\img\about-2.jpg" />
     <Content Include="Content\assets\img\about.jpg" />
     <Content Include="Content\assets\img\apple-touch-icon.png" />
+    <Content Include="Content\assets\img\chefs\chefs-1.jpg" />
+    <Content Include="Content\assets\img\chefs\chefs-2.jpg" />
+    <Content Include="Content\assets\img\chefs\chefs-3.jpg" />
     <Content Include="Content\assets\img\events-1.jpg" />
     <Content Include="Content\assets\img\events-2.jpg" />
     <Content Include="Content\assets\img\events-3.jpg" />
@@ -348,9 +352,9 @@
     <Content Include="Views\ContactPage\Index.cshtml" />
     <Content Include="Views\EventPage\Index.cshtml" />
     <Content Include="Views\GalleryPage\Index.cshtml" />
-    <Content Include="Views\HeaderBlock\HeaderBlock.cshtml" />
     <Content Include="Views\Homepage\Index.cshtml" />
     <Content Include="Views\MenuPage\Index.cshtml" />
+    <Content Include="Views\Shared\HeaderBlock.cshtml" />
     <Content Include="Views\Shared\Layouts\_Root.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />

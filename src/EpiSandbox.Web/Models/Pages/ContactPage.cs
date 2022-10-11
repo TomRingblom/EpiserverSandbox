@@ -1,5 +1,5 @@
-﻿using EpiSandbox.Web.Models.Blocks;
-using EPiServer.Core;
+﻿using System.ComponentModel.DataAnnotations;
+using EpiSandbox.Web.Models.Blocks;
 using EPiServer.DataAnnotations;
 
 namespace EpiSandbox.Web.Models.Pages
@@ -10,6 +10,9 @@ namespace EpiSandbox.Web.Models.Pages
         GroupName = "General Content")]
     public class ContactPage : AbstractContentPage
     {
-        public virtual ContentArea ContentArea { get; set; }
+        [Display(
+            Name = "Header Block Area", 
+            Order = 10)]
+        public virtual HeaderBlock HeaderBlock { get; set; }
     }
 }
