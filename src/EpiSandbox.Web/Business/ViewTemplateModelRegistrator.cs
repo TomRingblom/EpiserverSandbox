@@ -18,14 +18,20 @@ namespace EpiSandbox.Web.Business
                     Path = "~/Views/Shared/HeaderBlock.cshtml",
                     TemplateTypeCategory = TemplateTypeCategories.MvcPartialView,
                     AvailableWithoutTag = true
-                });
-            
-            viewTemplateModelRegistrator.Add(typeof(ChefBlock),
+                },
                 new EPiServer.DataAbstraction.TemplateModel()
                 {
-                    Name = "HeaderBlockTop",
-                    Description = "Display a header on top of the page.",
+                    Name = "ChefBlock",
+                    Description = "Display chefs on the page",
                     Path = "~/Views/Shared/ChefBlock.cshtml",
+                    TemplateTypeCategory = TemplateTypeCategories.MvcPartialView,
+                    AvailableWithoutTag = true
+                },
+                new EPiServer.DataAbstraction.TemplateModel()
+                {
+                    Name = "GalleryBlock",
+                    Description = "Display images in gallery carousel.",
+                    Path = "~/Views/Shared/GalleryBlock.cshtml",
                     TemplateTypeCategory = TemplateTypeCategories.MvcPartialView,
                     AvailableWithoutTag = true
                 });

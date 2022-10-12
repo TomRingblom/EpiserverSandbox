@@ -237,6 +237,7 @@
     </Compile>
     <Compile Include="Helpers\HtmlHelpers.cs" />
     <Compile Include="Models\Blocks\ChefBlock.cs" />
+    <Compile Include="Models\Blocks\GalleryBlock.cs" />
     <Compile Include="Models\Blocks\HeaderBlock.cs" />
     <Compile Include="Models\Blocks\SiteBlockData.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
@@ -363,6 +364,7 @@
     <Content Include="Views\Homepage\Index.cshtml" />
     <Content Include="Views\MenuPage\Index.cshtml" />
     <Content Include="Views\Shared\ChefBlock.cshtml" />
+    <Content Include="Views\Shared\GalleryBlock.cshtml" />
     <Content Include="Views\Shared\HeaderBlock.cshtml" />
     <Content Include="Views\Shared\Layouts\_Root.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />

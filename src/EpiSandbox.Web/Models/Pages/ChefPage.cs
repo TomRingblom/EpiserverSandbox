@@ -15,6 +15,7 @@ namespace EpiSandbox.Web.Models.Pages
             Name = "Header Block Area", 
             Order = 10)]
         public virtual HeaderBlock HeaderBlock { get; set; }
+        
         [Display(
             Name = "Chefs",
             Order = 20)]
